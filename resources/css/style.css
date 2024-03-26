@@ -1,0 +1,60 @@
+/* Universal */
+
+body {
+    box-sizing: content-box;
+    font-size: 20px;
+    color: rgb(20, 20, 20);
+    background-color: cornflowerblue;
+}
+
+.block {
+    background-color: aliceblue;
+    min-width: 250px;
+    max-width: 600px;
+    padding: 1em;
+    margin: 1em auto;
+    line-height: 2em;
+    /* debugging border
+    border: solid 1px tomato; */
+    border-radius: 8px;
+}
+
+.block-heading {
+    font-weight: 900;
+}
+
+/* Header */
+
+.title-block {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: 600;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 0.5em;
+}
+
+.title-caption {
+    text-align: right;
+    font-size: 1.15em;
+    font-weight: 600;
+}
+
+/* Input Section */
+
+/* Output Section */
+
+.result-image {
+    display: block;
+    width: 100px;
+    margin: 0.5em auto 0.15em;
+    border-radius: 8px;
+}
+
+/* Footer */
+
+.footer-block {
+    font-size: 0.75em;
+}
