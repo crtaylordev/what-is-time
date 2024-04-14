@@ -8,34 +8,32 @@
     <title>What is time?</title>
 </head>
 <body>
-    <header>
-        <div class="block title-block">
-            <h1 class="title">What is time?</h1>
-            <h3 class="title-caption">Who the fuck even knows?</h3>
-        </div>
+    <header class="block title-block"> 
+        <h1 class="title">What is time?</h1>
+        <h3 class="title-caption">Who the fuck even knows?</h3>
     </header>
-    <section>
-        <div class="block input-block">
+    <main>
+        <section class="block input-block">
             <h2 class="block-heading">What amount of time are you pondering?</h2>
-            <strong>Amount of time (under 24hr):</strong>
-            <br>
+            <p class="input-request">Amount of time (under 24hr):</p>
             <h2 class="block-heading">What song do you want to compare it to?</h2>
-            <p><strong>Song name:</strong></p>
-            <p><strong>Artist name:</strong></p>
-            <p><strong>Song duration:</strong></p>
-        </div>
-    </section>
-    <section>
-        <div class="block output-block">
+            <p class="input-request">Song name:</p>
+            <p class="input-request">Artist name:</p>
+            <p class="input-request">Song duration:</p>
+        </section>
+        <section class="block output-block">
             <h2 class="block-heading">Your amount of time, demystified:</h2>
-            <span class="user-time">00:00:00</span> = <span class="result-number">0.0 plays</span> of <span class="result-song">Song Name</span> by <span class="result-artist">Artist Name</span>
+            <p class="output-text">
+                <span class="user-time">00:00:00</span> = 
+                <span class="result-number">0.0 plays</span> of 
+                <span class="result-song">Song Name</span> by 
+                <span class="result-artist">Artist Name</span>
+            </p>
             <img class="result-image" src="./resources/images/skeleton-dancing.gif">
-        </div>
-    </section>
-    <footer>
-        <div class="block footer-block">
-            <h4>(That's all, just wanted to let you know.)</h4>
-        </div>
+        </section>
+    </main>
+    <footer class="block footer-block">
+        <h4>(That's all, just wanted to let you know.)</h4>
     </footer>
 </body>
 </html>

@@ -8,6 +8,8 @@ body {
 }
 
 .block {
+    display: flex;
+    flex: 1;
     background-color: aliceblue;
     min-width: 250px;
     max-width: 600px;
@@ -19,6 +21,12 @@ body {
     border-radius: 8px;
 }
 
+.input-block,
+.output-block {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
 .block-heading {
     font-weight: 900;
 }
@@ -26,25 +34,39 @@ body {
 /* Header */
 
 .title-block {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
 }
 
 .title {
-    font-size: 3em;
-    font-weight: 600;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-bottom: 0.5em;
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .title-caption {
     text-align: right;
-    font-size: 1.15em;
-    font-weight: 600;
+    font-size: 1.25rem;
 }
 
 /* Input Section */
 
+.input-block {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.input-request {
+    font-weight: bold;
+}
+
 /* Output Section */
+
+.output-block {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
 
 .result-image {
     display: block;
@@ -57,4 +79,5 @@ body {
 
 .footer-block {
     font-size: 0.75em;
+    text-align: left;
 }
