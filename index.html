@@ -9,6 +9,9 @@
 </head>
 <body>
     <header class="window title-window"> 
+        <div class="window-topbar">
+            <span class="topbar-xmark">&#10045;</span>
+        </div>
         <div class="window-content">
             <h1 class="title">What is time?</h1>
             <h3 class="title-caption">Who even knows?</h3>
@@ -21,12 +24,31 @@
                 <span class="topbar-xmark">&#10045;</span>
             </div>
             <div class="window-content">
-                <h2 class="window-heading">What amount of time are you pondering?</h2>
-                <p class="input-request">Amount of time (under 24hr):</p>
-                <h2 class="window-heading">What song do you want to measure it with?</h2>
-                <p class="input-request">Song name:</p>
-                <p class="input-request">Artist name:</p>
-                <p class="input-request">Song duration:</p>
+                <div class="amount-input">
+                    <h2 class="window-heading">What amount of time are you pondering?</h2>
+                    <label for="hours" class="input-label">Hours (up to 24):</label>
+                    <input type="number" id="hours" name="hours" min="0" max="24" />
+                    <label for="minutes" class="input-label">Minutes:</label>
+                    <input type="number" id="minutes" name="minutes" min="0" max="60" />
+                </div>
+                <div class="song-input">
+                    <h2 class="window-heading">What song do you want to measure it with?</h2>
+                    <label for="song-title" class="input-label">Song title:</label>
+                    <input type="text" id="song-title" name="song-title" required minlength="2" maxlength="180" size="30" />
+                    <br>
+                    <label for="artist-name" class="input-label">Artist name:</label>
+                    <input type="text" id="artist-name" name="artist-name" required minlength="2" maxlength="60" size="30" />
+                    <br>
+                    <label class="input-label">Song duration:</label>
+                    <br>
+                    <label for="song-minutes" class="input-label">Minutes:</label>
+                    <input type="number" id="song-minutes" name="song-minutes" min="0" max="60" />
+                    <label for="song-seconds" class="input-label">Seconds:</label>
+                    <input type="number" id="song-seconds" name="song-seconds" min="0" max="60" />
+                </div>                
+                <div class="button-zone">
+                <button id="magic-button">Click Here for Math</button>
+                </div>
             </div>
         </section>
         <section class="window output-window">
@@ -41,8 +63,6 @@
                     <span class="result-number">0.0 plays</span> of 
                     <span class="result-song">Song Name</span> by 
                     <span class="result-artist">Artist Name</span>
-                </p>
-                <img class="result-image" src="./resources/images/skeleton-dancing.gif">
             </div>
         </section>
     </main>
@@ -51,8 +71,9 @@
             <span class="topbar-xmark">&#10045;</span>
         </div>
         <div class="window-content">
-            <h4>(That's all, just wanted to let you know.)</h4>
+            <h4>&copy; C.R. Taylor, 2024</h4>
         </div>
     </footer>
+    <script src="./script-main.js"></script>
 </body>
 </html>

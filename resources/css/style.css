@@ -5,10 +5,12 @@ body {
     font-size: 20px;
     color: rgb(20, 20, 20);
     background-color: cornflowerblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .window,
-.window-topbar {
+.window-topbar,
+.button-zone {
     display: flex;
 }
 
@@ -61,7 +63,9 @@ body {
 }
 
 .window-heading {
+    font-size: 1.5rem;
     font-weight: 900;
+    margin-bottom: 0.5rem;
 }
 
 /* Header */
@@ -69,7 +73,6 @@ body {
 .title-window {
     flex-direction: column;
     flex-wrap: nowrap;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 600;
 }
 
@@ -90,8 +93,31 @@ body {
     flex-wrap: nowrap;
 }
 
-.input-request {
-    font-weight: bold;
+.amount-input,
+.song-input {
+    margin-bottom: 1rem;
+}
+
+.button-zone {
+    justify-content: center;
+}
+
+#magic-button {
+    border: solid 2px darkslategray;
+    background-color: palevioletred;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+#magic-button:active {
+    transform: translateY(2px);
+}
+
+#magic-button:hover {
+    color: aliceblue;
 }
 
 /* Output Section */
@@ -111,6 +137,6 @@ body {
 /* Footer */
 
 .footer-window {
-    font-size: 0.75em;
-    text-align: left;
+    font-size: 0.65em;
+    text-align: center;
 }
