@@ -6,8 +6,8 @@ const songSeconds = document.getElementById('song-seconds');
 const songTitle = document.getElementById('song-title');
 const songArtist = document.getElementById('artist-name');
 
-const button = document.querySelector("#magic-button");
-const resultPara = document.querySelector("output-text")
+const button = document.getElementById("magic-button");
+const resultPara = document.getElementById("output-text");
 
 const getUserTotalMinutes = () => {
     let hours = +userHours.value;
@@ -32,5 +32,5 @@ const divMinutesBySong = () => {
 
 button.addEventListener("click", () => {
     let resultPlays = divMinutesBySong();
-    resultPara.textContent = `${userHours} hours and ${userMinutes} minutes = ${resultPlays} plays of ${songTitle} by ${songArtist}`;
+    resultPara.textContent = `${userHours.value} hours and ${userMinutes.value} minutes = ${resultPlays} plays of ${songTitle.value} by ${songArtist.value}`;
 });
