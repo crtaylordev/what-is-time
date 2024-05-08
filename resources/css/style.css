@@ -8,6 +8,25 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+input { 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#hours,
+#minutes,
+#song-minutes,
+#song-seconds {
+    display: block;
+    width:20%;
+}
+
+#song-title,
+#artist-name {
+    width: 100%;
+}
+
 .window,
 .window-topbar,
 .button-zone {
