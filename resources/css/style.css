@@ -165,3 +165,36 @@ input {
 .footer-window .topbar-xmark {
     font-size: 20px;
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 650px) {
+    .window {
+        max-width: 90%;
+    }
+
+    .window-heading {
+        font-size: 1.35rem;
+    }
+
+    #hours,
+    #minutes,
+    #song-minutes,
+    #song-seconds {
+        width: 7rem;
+    }
+
+    #output-text {
+        line-height: 1.45rem;
+    }
+}
+
+@media screen and (max-width: 423px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .title-caption {
+        font-size: 1.5rem;
+    }
+}
