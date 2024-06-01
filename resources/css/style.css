@@ -4,7 +4,7 @@ body {
     box-sizing: content-box;
     font-size: 20px;
     color: rgb(20, 20, 20);
-    background-color: cornflowerblue;
+    background-color: steelblue;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -160,4 +160,8 @@ input {
 .footer-window {
     font-size: 0.65em;
     text-align: center;
+}
+
+.footer-window .topbar-xmark {
+    font-size: 20px;
 }
